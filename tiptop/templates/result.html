@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submission form</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styling_1.css' %}"> 
+    
+</head>
+<body>
+    <div class="container">
+        <h1>New Ninja:</h1>
+        <p>Name: {{request.session.name}}, Location: {{request.session.loc}}, Language: {{request.session.language}}</p>
+    </div>
+</body>
+</html>
